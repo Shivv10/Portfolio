@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/006229872c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class= "bg-transparent">
+        <div id="header">
+            <div class="container1">
+                <nav>
+                    <img src="images/logo js.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a> </li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#services">Skills</a> </li>
+                        <li><a href="#portfolio">Projects</a> </li>
+                        <li><a href="#contact">Contact</a> </li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+
+                    <h1>Hi, I am <span>Shiv </span>Gandhi</h1>
+                    <p>and I
+                    <span class="auto-type" style="color: #fdbd01;"></span>
+                    </p>
+
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typed = new Typed(".auto-type", {
+                            strings: ["Imagine.", "Code.", "Deliver."],
+                            typeSpeed: 200,
+                            backSpeed: 100, 
+                            loop: true 
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <!----------------- About----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Univeristy portrait.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p style="color: whitesmoke;">
+                            Welcome to my digital realm! I'm Shiv Gandhi, a passionate 3rd-year Computer Science student at the University of Manitoba. This portfolio offers a glimpse into my explorations in coding and problem-solving. With a passion for technology and a hunger for growth, I'm on the lookout for opportunities to contribute meaningfully to the tech community. Let's connect and explore together!
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Technical Skills</span> 
+                                    <br>• Data Structures and Algorithms (Java, C++, C)
+                                    <br>• Object Oriented Programming
+                                    <br>• DevOps (HTML, CSS, JavaScript, Node.js)
+                                    <br>• Database Management (MySQL)
+                                    <br>• AWS (in progress, pursuing certification)
+                                    <br>• IDEs or Text Editors (e.g., Visual Studio Code, IntelliJ IDEA)
+                                    <br>• Operating Systems (e.g., Mac, Windows)
+                                </li>
+                                <li><span>Soft Skills</span>
+                                    <br>• Communication Skills
+                                    <br>• Problem-solving
+                                    <br>• Teamwork and Collaboration
+                                    <br>• Leadership
+                                    <br>• Sales and Customer-handling
+                                    <br>• Decision Making
+                                    <br>• Adaptability
+                                    <br>• Time Management
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Parts Advisor : PartSource (Aug, 2023 - current)</span>
+                                <br>• Provide exceptional service to customers by offering expert guidance and personalized recommendations on automotive parts.
+
+                                <br>• Develop a comprehensive understanding of automotive components to effectively assist customers in finding the right parts for their vehicles.
+                                
+                                <br>• Demonstrate proficiency in handling transactions, including processing payments accurately and maintaining meticulous records.
+                                
+                                <br>• Utilize strong verbal communication skills to effectively convey information and build rapport with customers, enhancing their overall experience.
+                                
+                                <br>• Ensure precision and accuracy in all aspects of transaction handling and record-keeping to uphold the highest standards of quality and professionalism.
+                                
+                                <br>• Collaborate closely with colleagues to optimize workflow efficiency and contribute to the achievement of team goals and organizational objectives.
+                                </li>
+
+                                <li><span>Marketing Sales Representative : Kognitive Marketing (Mar, 2022 - Aug, 2023)</span>
+                                    <br>• Skilled at working independently and collaboratively in a team environment.
+                                    <br>• Worked effectively in fast-paced environments.
+                                    <br>• Pitched customers about the benefits of the product and explained them how they can relate to the product.
+                                    <br>• Maintained knowledge of current promotions, exchange guidelines, and payment policies.
+                                    <br>• Assisted teammates with sales-processing tasks to meet daily sales goals.
+                                    <br>• Demonstrated respect, friendliness, and willingness to help wherever needed.
+                                    <br>• Self-motivated, with a strong sense of personal responsibility.
+                                    <br>• Excellent communication skills, both verbal and written.
+                                </li>
+
+                                <li>
+                                    <span>Associate : Walmart (May, 2022 - Aug, 2022)</span>
+                                    <br>• Proficiency in handling cash transactions, including counting, giving change, and processing payments
+                                    accurately.
+                                    <br>• Demonstrated ability to provide excellent customer service by greeting customers, answering questions, and resolving issues in a friendly and professional manner.
+                                    <br>• Managed efficient cash register operations. Flexibility in handling different payment methods (cash, credit/debit cards, mobile payments) and adjusting to changes in store policies or procedures.
+                                    <br>• Knowledge of Walmart's products, including different departments, brands, and promotions, enabling you to assist customers with product inquiries and recommendations.
+                                    <br>• Checked pricing, scanned items, applied discounts, and printed receipts to ring up customers.
+                                    <br>• Communication with customers professionally and proactively to provide product information and advice.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>University of Manitoba, Winnipeg, MB (2022 - 2026)</span>
+                                    <br>• Current GPA: 3.5 / 4.5
+                                    <br>• Dean's Honours List x2
+                                    <br>• DevOps Hackathon 2024 participant
+                                    <br>• Captain of Cricket Team Giant Slayers (2023 - Runners up)
+                                </li>
+                                <li><span>Parth School of Science, Gujarat, India (2018 - 2020)</span>
+                                    <br>• Head Boy (2019)
+                                    <br>• Final Year Grade: 94% 
+                                    <br>• Among the top 1% in my province (Gujarat).
+                                    <br>• Captain of Football team 
+                                </li>
+                                <li><span>Delhi Public School, Gujarat, India (2008 - 2018)</span>
+                                    <br>• Took part in multiple National Mathematics and Science Olympiads
+                                    <br>• Captain of School Football Team(3x City Champions, 1x State Champions)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------   Interests   -------------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Interests</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Sowftware Development</h2>
+                        <p>Proficient in software development, my passion lies in unraveling complex problems through coding. With intermediate to advanced expertise in Data Structures and Algorithms (DSA), I relish crafting efficient solutions, pushing the boundaries of innovation..</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-brands fa-js"></i>
+
+                        <h2>Web Development</h2>
+                        <p>In web development, I possess foundational skills, proficient in HTML, CSS, and JavaScript. While my expertise may lean towards the basics, I'm dedicated to learning and expanding my abilities in creating simple yet effective web solutions.</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <!-- <i class="fa-brands fa-js"></i> -->
+                        <i class="fa-brands fa-aws"></i>
+                        <h2>AWS Cloud Practitioner</h2>
+                        <p>Dedicated to expanding my skill set, I'm currently focused on attaining AWS certification. With ongoing study and practical application, I aim to master basic to intermediate-level AWS skills, enhancing my ability to deploy scalable and secure cloud solutions.</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>Proficient in database management, I'm dedicated to advancing my skills further. Currently enhancing my expertise from intermediate to advanced levels, I aim to optimize database performance and design efficient data storage solutions. This ongoing commitment reflects my passion for delivering robust and scalable backend systems.</p>
+                    </div>
+                </div>
+                <div class="notice">
+                    <p>  
+                        **These skills and interests reflect my current proficiency. I maintain flexibility and a commitment to ongoing learning, readily adapting to emerging technologies and methodologies. I am poised to apply new skills effectively to meet evolving industry demands.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work img1">
+                        <img src="images/chess1resize.jpeg">
+                        <div class="layer">
+                            <h3>Chess Game</h3>
+                            <p>Crafted as a two-player experience, this Java 2D Chess game utilizes Java graphics and JFrame components to offer a classic and engaging platform for players to enjoy the timeless strategy game with ease. </p>
+                            <a href="https://github.com/Shivv10/Chess2D" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/database3.jpeg">
+                        <div class="layer">
+                            <h3>Database Management</h3>
+                            <p>The app connects you to the talented people all around the world. Download from playstore
+                                or appstore. </p>
+                            <a href="https://github.com/Shivv10" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/pac man.jpeg">
+                        <div class="layer">
+                            <h3>Infinite Halls</h3>
+                            <p>Designed and developed an "Infinite Halls" game resembling Pac-Man using Processing, a Java-based programming language. Implemented mazes and character movements for an entertaining and nostalgic gaming experience. </p>
+                            <a href="https://github.com/Shivv10/Processing.org" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Shivv10" target="_blank" class="btn">See more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <!-- ---------Contact---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> shivvg10@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>(+1) 204-951-5195</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/shiv-gandhi-4300a1232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Shivv10" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100077364798034" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/shivv__10/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a> -->
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download Resume/CV</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.445149431341!2d-97.15309052341954!3d49.81529813289239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea75eb0c8c9247%3A0xf880473185f3472c!2sSouthview%20Plaza%2C%202080%20Pembina%20Hwy%2C%20Winnipeg%2C%20MB%20R3T%202G9!5e0!3m2!1sen!2sca!4v1711847037456!5m2!1sen!2sca" width="90%" height="30%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" cols="30" rows="10" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©️ 2024. All rights reserved by Shiv Gandhi.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <script>
+        // variable for the sidemenu
+        sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysBIydHlPSd53xpHb5coDmmbwygGbQSxVFkWUCmggm7V09bFgdSUvQUmzGnWRFBT8RLw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
