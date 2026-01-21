@@ -173,9 +173,10 @@ const Projects: React.FC<ProjectsProps> = ({ navigateTo, darkMode, setDarkMode }
         </div>
 
         {/* --- LAYER 2: The Flashlight Overlay --- */}
+        {/* FIX: Added 'hidden md:block' to hide this mask on mobile devices */}
         {!selectedId && (
           <div
-            className="absolute inset-0 z-10 pointer-events-none transition-colors duration-500"
+            className="hidden md:block absolute inset-0 z-10 pointer-events-none transition-colors duration-500"
             style={{
               background: `radial-gradient(circle 380px at ${mousePosition.x}px ${mousePosition.y}px, transparent 185px, ${overlayColor} 187px)`,
             }}
