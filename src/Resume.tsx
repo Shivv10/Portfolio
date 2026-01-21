@@ -19,7 +19,7 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
       id: 1,
       role: "Parts Advisor / Customer Service",
       company: "Part Source",
-      period: "2022 – Present",
+      period: "2023 – Present",
       icon: <Coffee size={20} />,
       content: "Currently continuing my role here. Managing inventory for 50+ clients/day and handling complex customer needs. If I can handle angry customers needing a specific spark plug, I can handle your merge conflicts. This role built my communication and negotiation skills significantly.",
       tech: ["Inventory Mgmt", "Communication", "CRM"]

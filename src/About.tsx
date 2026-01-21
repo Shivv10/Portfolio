@@ -154,7 +154,7 @@ const About: React.FC<AboutProps> = ({ navigateTo, darkMode, setDarkMode }) => {
             I am 22 years old, and I refuse to believe I have to pick <span className="italic text-indigo-600 dark:text-indigo-400">just one thing</span>.
           </p>
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-            They say life is short, but I think it's just long enough to be a tech genius (which I clearly am not), a startup founder, a football player, and an F1 driver (okay, maybe just in the simulator).
+            They say life is short, but I think it's just long enough to be a tech genius, a startup founder, a football player, and an F1 driver (okay, maybe just in the simulator).
             I know it's just daydreaming at this point and reality will hit me eventually, but for now, I'm trying to do it all.
           </p>
 
