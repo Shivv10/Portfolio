@@ -30,8 +30,8 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
       company: "Government of Manitoba",
       period: "Sep 2025 – Dec 2025",
       icon: <Terminal size={20} />,
-      content: "Proved that 'Government' and 'Fast-Paced Innovation' can go in the same sentence. Built Power BI dashboards that saved analysts 5+ hours a week. Focused on optimizing data reporting workflows and maintaining legacy systems to ensure daily reliability.",
-      tech: ["Power BI", "SQL", "System Maintenance", "Data Analysis"]
+      content: "Proved that 'Government' and 'Fast-Paced Innovation' actually coexist. Spearheaded Power BI dashboards integrated with Azure SQL & Dataverse that saved analysts hours of manual work. Also contributed to the Manitoba Health Replacement App, bridging the gap between ancient legacy systems and modern cloud infrastructure.",
+      tech: ["Power BI", "Azure SQL", "Dataverse", "Power Automate"]
     },
     {
       id: 3,
@@ -39,8 +39,8 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
       company: "Government of Manitoba",
       period: "May 2025 – Aug 2025",
       icon: <Briefcase size={20} />,
-      content: "The summer of bug squashing. I resolved 30+ backlog bugs (some older than my favorite t-shirt) and reduced support tickets by 18%. Basically, I made the system stop yelling at people.",
-      tech: ["Agile", "REST APIs", "Data Workflows"]
+      content: "The summer of 'Low-Code' modernization. I designed 5+ Power Automate workflows that finally killed off boring manual data entry tasks. Also assisted in migrating legacy data to Azure and squashed UI/UX bugs in the Manitoba Health App—basically making sure the digital healthcare system didn't need a doctor itself.",
+      tech: ["Power Platform", "Azure", "Agile", "Automation"]
     },
     {
       id: 4,
@@ -227,11 +227,11 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
             <div className="space-y-4">
               <div>
                 <span className="text-xs font-bold text-slate-400 uppercase">Languages</span>
-                <p className="text-slate-700 dark:text-slate-300">Java, Python, C++, TypeScript, SQL, Go</p>
+                <p className="text-slate-700 dark:text-slate-300">Java, Python, C++, TypeScript, SQL</p>
               </div>
               <div>
                 <span className="text-xs font-bold text-slate-400 uppercase">The Fun Stuff</span>
-                <p className="text-slate-700 dark:text-slate-300">React 19, Next.js 15, PyTorch, AWS, Docker</p>
+                <p className="text-slate-700 dark:text-slate-300">React, Next.js, PyTorch, AWS, Docker</p>
               </div>
             </div>
           </div>
@@ -239,14 +239,14 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
 
         {/* Footer */}
         <div className="border-t border-slate-200 dark:border-slate-800 pt-16 text-center">
-          <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">"Oh, so you're one of those who lives by the textbook?"</p>
+          <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">If you like things by the book, here’s my official resume.</p>
           <div className="inline-block p-1 pr-2 rounded-full bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
             <a
               href={`${import.meta.env.BASE_URL}resume/Shiv-Gandhi-Resume.pdf`}
               download="Shiv-Gandhi-Resume.pdf"
               className="flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:opacity-90 transition-all active:scale-95"
             >
-              <Download size={20} /> Here is a professional PDF for you
+              <Download size={20} /> Official PDF resume
             </a>
 
           </div>
