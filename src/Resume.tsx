@@ -242,7 +242,7 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
           <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">"Oh, so you're one of those who lives by the textbook?"</p>
           <div className="inline-block p-1 pr-2 rounded-full bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
             <a
-              href="/resume/Shiv-Gandhi-Resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume/Shiv-Gandhi-Resume.pdf`}
               download="Shiv-Gandhi-Resume.pdf"
               className="flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:opacity-90 transition-all active:scale-95"
             >
