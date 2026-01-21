@@ -17,7 +17,7 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
   const experiences = [
     {
       id: 1,
-      role: "Parts Advisor / Customer Service",
+      role: "Parts Advisor",
       company: "Part Source",
       period: "2023 – Present",
       icon: <Coffee size={20} />,
