@@ -230,7 +230,7 @@ const About: React.FC<AboutProps> = ({ navigateTo, darkMode, setDarkMode }) => {
             I try every sport I can until my body literally refuses to cooperate.
           </p>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="aspect-video relative overflow-hidden rounded-2xl bg-slate-200 dark:bg-slate-800">
               <video
                 src={getPath("videos/football.mp4")} 
