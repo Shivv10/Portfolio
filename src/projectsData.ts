@@ -35,7 +35,7 @@ export const projects: Project[] = [
     desc: "ML pipeline detecting fraud in imbalanced datasets.",
     details: "A complete machine learning pipeline using SMOTE for sampling and XGBoost/LightGBM for classification. Includes Monte Carlo cross-validation and extensive performance visualization (ROC/AUC, F1).",
     tags: ["Python", "ML", "XGBoost", "SMOTE"],
-    link: "#", // Add link when ready
+    link: "https://github.com/Shivv10/credit-card-fraud",
     color: "from-red-500 to-rose-600"
   },
   {
