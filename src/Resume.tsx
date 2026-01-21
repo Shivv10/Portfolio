@@ -63,13 +63,13 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
   ];
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative w-full min-h-screen bg-slate-50 dark:bg-slate-950 overflow-y-auto transition-colors duration-300"
     >
       {/* --- Navigation Bar --- */}
       <div className="fixed top-6 left-6 z-50">
-        <button 
+        <button
           onClick={() => navigateTo('home')}
           className="p-3 bg-white/80 dark:bg-white/10 hover:bg-white dark:hover:bg-white/20 backdrop-blur-md rounded-full text-slate-900 dark:text-white transition-all border border-slate-200 dark:border-white/10 shadow-lg"
         >
@@ -78,12 +78,12 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
       </div>
 
       <div className="fixed top-6 right-6 z-50">
-         <button 
-           onClick={() => setIsMenuOpen(!isMenuOpen)} 
-           className="p-3 bg-white/80 dark:bg-white/10 hover:bg-white dark:hover:bg-white/20 backdrop-blur-md rounded-full text-slate-900 dark:text-white transition-all border border-slate-200 dark:border-white/10 shadow-lg"
-         >
-            <Menu size={24} />
-         </button>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="p-3 bg-white/80 dark:bg-white/10 hover:bg-white dark:hover:bg-white/20 backdrop-blur-md rounded-full text-slate-900 dark:text-white transition-all border border-slate-200 dark:border-white/10 shadow-lg"
+        >
+          <Menu size={24} />
+        </button>
       </div>
 
       {/* --- Theme Toggle --- */}
@@ -105,38 +105,38 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
             className="fixed inset-y-0 right-0 w-full sm:w-80 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-2xl z-[60] p-8 flex flex-col pt-24 border-l border-slate-200 dark:border-slate-800"
           >
             <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6 p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
-               <X size={24} className="text-slate-900 dark:text-white" />
+              <X size={24} className="text-slate-900 dark:text-white" />
             </button>
 
             <div className="flex flex-col gap-6 text-2xl font-bold text-slate-900 dark:text-white">
-              
+
               {/* Home Link on Top */}
-              <button 
+              <button
                 onClick={() => navigateTo('home')}
                 className="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
               >
-                Home <Home size={20} className="mt-1 opacity-50"/>
+                Home <Home size={20} className="mt-1 opacity-50" />
               </button>
 
-              <button 
+              <button
                 onClick={() => navigateTo('projects')}
                 className="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
               >
-                Projects <Code size={20} className="mt-1 opacity-50"/>
+                Projects <Code size={20} className="mt-1 opacity-50" />
               </button>
-              
-              <button 
+
+              <button
                 onClick={() => setIsMenuOpen(false)}
                 className="text-left text-indigo-700 dark:text-indigo-400 transition-colors flex items-center gap-2"
               >
-                Resume <FileText size={20} className="mt-1 opacity-60"/>
+                Resume <FileText size={20} className="mt-1 opacity-60" />
               </button>
 
-              <button 
+              <button
                 onClick={() => navigateTo('about')}
                 className="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
               >
-                About Me <User size={20} className="mt-1 opacity-50"/>
+                About Me <User size={20} className="mt-1 opacity-50" />
               </button>
 
               <a href={`mailto:${email}`} className="text-slate-600 dark:text-slate-300 mt-4 text-lg font-semibold flex items-center gap-2">
@@ -151,13 +151,13 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
       <div className="max-w-4xl mx-auto px-6 pt-32 pb-20">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-16">
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 tracking-tight">
-            The Professional <br/>
-            <span className="text-slate-400 dark:text-slate-600">(and slightly unfiltered)</span> <br/>
+            The Professional <br />
+            <span className="text-slate-400 dark:text-slate-600">(and slightly unfiltered)</span> <br />
             Journey.
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-            I’m a Computer Science Senior who builds scalable SaaS apps and optimizes databases. 
-            I also speak fluent Java, Python, and "Corporate Client". 
+            I’m a Computer Science Senior who builds scalable SaaS apps and optimizes databases.
+            I also speak fluent Java, Python, and "Corporate Client".
             Here is what I've actually done, minus the buzzwords (okay, maybe a few buzzwords).
           </p>
         </motion.div>
@@ -166,7 +166,7 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
         <div className="space-y-12 mb-20">
           <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-8">Experience Log</h2>
           {experiences.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={exp.id}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -241,9 +241,14 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
         <div className="border-t border-slate-200 dark:border-slate-800 pt-16 text-center">
           <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">"Oh, so you're one of those who lives by the textbook?"</p>
           <div className="inline-block p-1 pr-2 rounded-full bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
-            <a href="src/assets/Shiv-Gandhi-Resume.pdf" download="Shiv-Gandhi-Resume.pdf" className="flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:opacity-90 transition-all active:scale-95">
+            <a
+              href="/resume/Shiv-Gandhi-Resume.pdf"
+              download="Shiv-Gandhi-Resume.pdf"
+              className="flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-bold hover:opacity-90 transition-all active:scale-95"
+            >
               <Download size={20} /> Here is a professional PDF for you
             </a>
+
           </div>
           <p className="text-xs text-slate-400 mt-4">(ATS friendly, HR approved)</p>
         </div>
