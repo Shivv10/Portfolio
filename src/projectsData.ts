@@ -17,7 +17,7 @@ export const projects: Project[] = [
     desc: "AI-powered finance manager with Gemini receipt scanning.",
     details: "A modern expense tracker built with Next.js and Tailwind. It uses Google Gemini AI to extract data from receipt images automatically and Inngest workflows to generate financial insights and charts.",
     tags: ["Next.js", "TypeScript", "Inngest", "Tailwind", "Gemini AI"],
-    link: "https://github.com/Shivv10/smartspend",
+    link: "https://smartspendnow.vercel.app/",
     color: "from-emerald-400 to-green-600"
   },
   {
