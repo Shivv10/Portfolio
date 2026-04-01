@@ -18,10 +18,10 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
     id: 1,
     role: "Application Developer (Part-Time)",
     company: "Government of Manitoba",
-    period: "Sep 2025 – Dec 2025",
+    period: "Sep 2025 – April 2026",
     icon: <Terminal size={20} />,
-    content: "Worked on building and improving ETL workflows using Microsoft tools and Python, making sure data actually flows the way it's supposed to (which is rarer than you'd think). Built Power BI dashboards on top of Azure SQL using proper data modeling, turning messy data into something people can actually use. Also wrote a lot of SQL to support custom reporting and kept things well-documented so others weren’t left guessing.",
-    tech: ["Python", "Azure SQL", "Power BI", "ETL", "SQL"]
+    content: "Worked on building real-world internal tools using the Microsoft stack. Developed Power BI dashboards connected to Azure SQL and Dataverse to turn complex data into automated reports people actually use. Also built Power Apps and Power Pages solutions to replace legacy workflows, and used Power Automate to eliminate a bunch of manual processes. Spent a lot of time bridging old systems with modern cloud tools — and explaining all of it in plain English to stakeholders.",
+    tech: ["Power BI", "Azure SQL", "Dataverse", "Power Apps", "Power Automate"]
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
     company: "Government of Manitoba",
     period: "May 2025 – Aug 2025",
     icon: <Briefcase size={20} />,
-    content: "Got hands-on with building and testing automated data pipelines and pushing code to real environments. Spent a lot of time writing SQL and working with Excel to pull and analyze enterprise data, cutting down manual work. Also worked closely with senior devs and DBAs to debug and fix 30+ integration issues — definitely learned how to break things... and fix them.",
-    tech: ["SQL", "Excel", "Data Pipelines", "Testing", "Agile"]
+    content: "Focused on modernizing internal systems using Power Platform and Azure. Built 5+ automated workflows that cut down repetitive manual tasks and made data processing smoother. Worked in an Agile team fixing 30+ bugs and improving system reliability. Also contributed to UI/UX improvements to make internal tools more usable for non-technical users.",
+    tech: ["Power Platform", "Azure", "Power Automate", "Agile", "Debugging"]
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
     company: "Symbiosis Technologies",
     period: "Aug 2023 – May 2025",
     icon: <CodeIcon size={20} />,
-    content: "Built and integrated REST APIs in a microservices setup, helping different systems actually talk to each other. Optimized database performance with better queries and stored procedures, improving pipeline efficiency by around 25%. Also worked with Git for version control and collaborated in daily stand-ups like a proper dev team.",
-    tech: ["REST APIs", "Microservices", "SQL", "Git"]
+    content: "Worked on backend systems using Java, C#, and SQL in a microservices environment. Built and integrated REST APIs to connect internal and third-party systems. Improved logging and monitoring efficiency by around 25%, which made debugging and analysis way easier. Also got solid experience working in Agile teams and communicating technical ideas clearly.",
+    tech: ["Java", "C#", "SQL", "REST APIs", "Microservices"]
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
     company: "Science Student Association, University of Manitoba",
     period: "Sep 2024 – Dec 2024",
     icon: <Coffee size={20} />,
-    content: "Helped students understand data structures, algorithms, and OOP concepts without making it more confusing than it already is. Mostly involved debugging code together and breaking down problems step-by-step.",
+    content: "Helped students understand data structures, algorithms, and OOP without making it more confusing than it needs to be. Mostly involved walking through problems, debugging code together, and building confidence step by step.",
     tech: ["Data Structures", "Algorithms", "OOP", "Debugging"]
   }
 ];
