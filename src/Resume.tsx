@@ -13,45 +13,44 @@ const Resume: React.FC<ResumeProps> = ({ navigateTo, darkMode, setDarkMode }) =>
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const email = "shivvgandhii@gmail.com";
 
-  // Resume Data
   const experiences = [
-    {
-      id: 1,
-      role: "Parts Advisor",
-      company: "Part Source",
-      period: "2023 – Present",
-      icon: <Coffee size={20} />,
-      content: "Currently continuing my role here. Managing inventory for 50+ clients/day and handling complex customer needs. If I can handle angry customers needing a specific spark plug, I can handle your merge conflicts. This role built my communication and negotiation skills significantly.",
-      tech: ["Inventory Mgmt", "Communication", "CRM"]
-    },
-    {
-      id: 2,
-      role: "Application Developer (Part-time)",
-      company: "Government of Manitoba",
-      period: "Sep 2025 – Dec 2025",
-      icon: <Terminal size={20} />,
-      content: "Proved that 'Government' and 'Fast-Paced Innovation' actually coexist. Spearheaded Power BI dashboards integrated with Azure SQL & Dataverse that saved analysts hours of manual work. Also contributed to the Manitoba Health Replacement App, bridging the gap between ancient legacy systems and modern cloud infrastructure.",
-      tech: ["Power BI", "Azure SQL", "Dataverse", "Power Automate"]
-    },
-    {
-      id: 3,
-      role: "Software Developer Intern",
-      company: "Government of Manitoba",
-      period: "May 2025 – Aug 2025",
-      icon: <Briefcase size={20} />,
-      content: "The summer of 'Low-Code' modernization. I designed 5+ Power Automate workflows that finally killed off boring manual data entry tasks. Also assisted in migrating legacy data to Azure and squashed UI/UX bugs in the Manitoba Health App—basically making sure the digital healthcare system didn't need a doctor itself.",
-      tech: ["Power Platform", "Azure", "Agile", "Automation"]
-    },
-    {
-      id: 4,
-      role: "Assistant Software Developer",
-      company: "Symbiosis Technologies",
-      period: "Aug 2021 – Dec 2021",
-      icon: <CodeIcon size={20} />,
-      content: "My origin story. Worked on microservices in Java & C#. Improved logging efficiency by 25% because I believe in leaving a breadcrumb trail when things break. Learned that 'production' is a scary place, but we deployed there anyway.",
-      tech: ["Java", "C#", "SQL", "Microservices"]
-    }
-  ];
+  {
+    id: 1,
+    role: "Application Developer (Part-Time)",
+    company: "Government of Manitoba",
+    period: "Sep 2025 – Dec 2025",
+    icon: <Terminal size={20} />,
+    content: "Worked on building and improving ETL workflows using Microsoft tools and Python, making sure data actually flows the way it's supposed to (which is rarer than you'd think). Built Power BI dashboards on top of Azure SQL using proper data modeling, turning messy data into something people can actually use. Also wrote a lot of SQL to support custom reporting and kept things well-documented so others weren’t left guessing.",
+    tech: ["Python", "Azure SQL", "Power BI", "ETL", "SQL"]
+  },
+  {
+    id: 2,
+    role: "Software Application Developer (Intern)",
+    company: "Government of Manitoba",
+    period: "May 2025 – Aug 2025",
+    icon: <Briefcase size={20} />,
+    content: "Got hands-on with building and testing automated data pipelines and pushing code to real environments. Spent a lot of time writing SQL and working with Excel to pull and analyze enterprise data, cutting down manual work. Also worked closely with senior devs and DBAs to debug and fix 30+ integration issues — definitely learned how to break things... and fix them.",
+    tech: ["SQL", "Excel", "Data Pipelines", "Testing", "Agile"]
+  },
+  {
+    id: 3,
+    role: "Assistant Software Developer",
+    company: "Symbiosis Technologies",
+    period: "Aug 2023 – May 2025",
+    icon: <CodeIcon size={20} />,
+    content: "Built and integrated REST APIs in a microservices setup, helping different systems actually talk to each other. Optimized database performance with better queries and stored procedures, improving pipeline efficiency by around 25%. Also worked with Git for version control and collaborated in daily stand-ups like a proper dev team.",
+    tech: ["REST APIs", "Microservices", "SQL", "Git"]
+  },
+  {
+    id: 4,
+    role: "Tutor",
+    company: "Science Student Association, University of Manitoba",
+    period: "Sep 2024 – Dec 2024",
+    icon: <Coffee size={20} />,
+    content: "Helped students understand data structures, algorithms, and OOP concepts without making it more confusing than it already is. Mostly involved debugging code together and breaking down problems step-by-step.",
+    tech: ["Data Structures", "Algorithms", "OOP", "Debugging"]
+  }
+];
 
   const education = [
     {

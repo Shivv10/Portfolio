@@ -13,6 +13,15 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "SmartMap",
+    desc: "Full-stack data mapping tool built with Payworks.",
+    details: "Built a real-world data mapping solution in collaboration with Payworks to handle complex payroll data integrations. Developed scalable Node.js backend services and a responsive JavaScript frontend to automate mapping workflows. Integrated AI-powered ingestion, validation, and transformation to reduce manual effort and improve data accuracy. Also built REST APIs and testing pipelines to keep everything reliable in production.",
+    tags: ["Node.js", "JavaScript", "REST APIs", "AI", "Full Stack"],
+    link: "https://github.com/Shivv10/SmartMap",
+    color: "from-green-500 to-emerald-600"
+  },
+  {
+    id: 2,
     title: "SmartSpend",
     desc: "AI-powered finance manager with Gemini receipt scanning.",
     details: "A modern expense tracker built with Next.js and Tailwind. It uses Google Gemini AI to extract data from receipt images automatically and Inngest workflows to generate financial insights and charts.",
@@ -21,7 +30,7 @@ export const projects: Project[] = [
     color: "from-emerald-400 to-green-600"
   },
   {
-    id: 2,
+    id: 3,
     title: "FitTrack Mobile",
     desc: "Android app for calorie tracking and exercise management.",
     details: "An Android application designed for health-conscious users to track nutrition and fitness. Features user authentication, unit/UI testing with Espresso, and a clean interface for daily logging.",
@@ -30,7 +39,7 @@ export const projects: Project[] = [
     color: "from-cyan-400 to-blue-500"
   },
   {
-    id: 3,
+    id: 4,
     title: "Credit Fraud Detection",
     desc: "ML pipeline detecting fraud in imbalanced datasets.",
     details: "A complete machine learning pipeline using SMOTE for sampling and XGBoost/LightGBM for classification. Includes Monte Carlo cross-validation and extensive performance visualization (ROC/AUC, F1).",
@@ -39,7 +48,7 @@ export const projects: Project[] = [
     color: "from-red-500 to-rose-600"
   },
   {
-    id: 4,
+    id: 5,
     title: "Horizon SaaS",
     desc: "Banking platform connecting real accounts via Plaid.",
     details: "A financial SaaS connecting to multiple bank accounts using Plaid and Dwolla. Supports real-time transaction updates, funds transfer between users, and SSR authentication.",
@@ -48,7 +57,7 @@ export const projects: Project[] = [
     color: "from-indigo-500 to-violet-600"
   },
   {
-    id: 5,
+    id: 6,
     title: "Cloud & DevOps",
     desc: "Infrastructure automation with Docker and AWS.",
     details: "My workflow for deploying applications. I use Docker for containerization to ensure consistency and AWS (EC2, S3) for scalable hosting, managed via CI/CD pipelines.",
@@ -57,7 +66,7 @@ export const projects: Project[] = [
     color: "from-orange-400 to-yellow-500"
   },
   {
-    id: 6,
+    id: 7,
     title: "Winnipeg Transport DB",
     desc: "CLI tool for querying city transit data via SQL.",
     details: "A Java-based Controller interface interacting with a SQLite database. Features optimized queries for analyzing bus transit performance and traffic stats, reducing execution time by 40%.",
@@ -66,7 +75,7 @@ export const projects: Project[] = [
     color: "from-amber-400 to-orange-500"
   },
   {
-    id: 7,
+    id: 8,
     title: "TreeDrive Server",
     desc: "Stateful file-sharing server operating over TCP.",
     details: "A custom file-sharing system that does not use HTTP. Handles multiple clients concurrently using 'select', supports PUSH/GET/LIST commands, and maintains persistent metadata.",
@@ -75,7 +84,7 @@ export const projects: Project[] = [
     color: "from-slate-400 to-gray-600"
   },
   {
-    id: 8,
+    id: 9,
     title: "Event-Driven Sim",
     desc: "Supermarket queue simulation using priority queues.",
     details: "A C++ simulation modeling customer flow and cashier service times. Uses a priority queue to process chronological events dynamically rather than time-stepping.",
@@ -84,7 +93,7 @@ export const projects: Project[] = [
     color: "from-pink-500 to-rose-500"
   },
   {
-    id: 9,
+    id: 10,
     title: "Stock Market Sim",
     desc: "Real-time trading simulation and trend analysis.",
     details: "Java application allowing users to trade stocks based on simulated price fluctuations. Includes tools for technical analysis like RSI and Moving Averages with persistent portfolio storage.",
@@ -93,7 +102,7 @@ export const projects: Project[] = [
     color: "from-teal-400 to-emerald-600"
   },
   {
-    id: 10,
+    id: 11,
     title: "Luxury EVs UX/UI",
     desc: "HCI-focused e-commerce interface prototype.",
     details: "A vertical web prototype for a luxury electric vehicle brand. Developed based on user research, interviews, and low-fidelity storyboards to optimize Human-Computer Interaction.",
@@ -102,7 +111,7 @@ export const projects: Project[] = [
     color: "from-fuchsia-500 to-purple-600"
   },
   {
-    id: 11,
+    id: 12,
     title: "Terminal Chess",
     desc: "Playable chess engine running in the terminal.",
     details: "A simplified game of chess developed in Java. Features a built-in engine that calculates valid moves and game logic, all rendered via a text-based terminal interface.",
@@ -111,7 +120,7 @@ export const projects: Project[] = [
     color: "from-gray-500 to-slate-700"
   },
   {
-    id: 12,
+    id: 13,
     title: "DSA Solutions",
     desc: "Collection of complex algorithmic problems in Java.",
     details: "A repository of coursework and challenges solving various Data Structures and Algorithms problems. Focuses on time complexity, memory efficiency, and clean code structure.",
